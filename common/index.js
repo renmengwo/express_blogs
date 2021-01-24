@@ -42,7 +42,7 @@ const checkParams = (params, checkArr, callback) => {
 * */
 const autoFn = (tasks, res, resobj) => {
     async.auto(tasks, (err) => {
-        if (!!err) {
+        if (err) {
             res.json({
                 status: err.status || constant.DEFAULT_ERROR.status,
                 msg: err.msg || JSON.stringify(err)

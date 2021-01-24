@@ -11,7 +11,7 @@ const obj = {
     },
     // 定义错误返回-缺少必要的参数
     LACK: {
-        status: -2,
+        status: -1,
         msg: '缺少必要的参数'
     }
 }
